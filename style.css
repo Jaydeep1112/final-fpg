@@ -4983,7 +4983,7 @@ body.dark .project-cat,
 
 
 .project-page-header.style_2 {
-    margin-bottom: 100px
+    margin-bottom: 50px
 }
 
 .project-page-header.style_2 .project-metas {
@@ -9019,7 +9019,7 @@ body.dark .ac-title {
 
 .img-anim-wrapper {
     border: 1px solid #ccc;
-    margin: 5px;
+    margin: 0px;
     display: block;
     position: relative;
     width: 100%;
