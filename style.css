@@ -3611,7 +3611,7 @@ section:after {
 
     .wrapper {
         max-width: 90%;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 
     .wrapper-small {
@@ -3620,7 +3620,7 @@ section:after {
     }
 
     .wrapper-full {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
 
     .c-col-1,
@@ -3636,7 +3636,7 @@ section:after {
     .c-col-11,
     .c-col-12 {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 
     .fit-col {
@@ -9205,7 +9205,7 @@ body.dark .ac-title {
     /* ------- ### Site Footer ------- **/
 
     .c-col-6.footer-widget {
-        margin-bottom: 60px
+        margin-bottom: 90px
     }
 
     .c-col-3.footer-widget {
@@ -9213,7 +9213,7 @@ body.dark .ac-title {
     }
 
     .footer-widget .big-button a {
-        font-size: 30px;
+        font-size: 21px;
         letter-spacing: -0.06em;
     }
 
