@@ -3453,12 +3453,12 @@ body.dark ul.check-payments li:hover {
 
 .wrapper-full {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .section {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
     position: relative;
     background-size: cover;
     background-position: center;
