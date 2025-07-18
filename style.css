@@ -317,7 +317,7 @@ sup {
  */
 
 img {
-    width:250px;
+    width: 250px;
     border-style: none;
 }
 
@@ -329,7 +329,7 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-form > div {
+form>div {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -341,11 +341,11 @@ form > div {
     box-sizing: border-box;
 }
 
-form > div.half-field {
+form>div.half-field {
     width: 50%;
 }
 
-form > div::before {
+form>div::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -357,11 +357,11 @@ form > div::before {
     width: 0;
 }
 
-body.dark form > div::before {
+body.dark form>div::before {
     background: #fff
 }
 
-form > div.focus::before {
+form>div.focus::before {
     width: 100%;
 }
 
@@ -394,7 +394,7 @@ form label {
     pointer-events: none
 }
 
-form > div.focus label {
+form>div.focus label {
     top: 0;
     font-size: 12px;
     -webkit-transform: translateY(-50%);
@@ -858,7 +858,7 @@ span.apl-background {
     left: -4%;
 }
 
-.apl-loading > span {
+.apl-loading>span {
     display: inline-block;
     overflow: hidden;
 }
@@ -1144,7 +1144,7 @@ span.apl-background {
 }
 
 .menu-toggle {
-    top:28px;
+    top: 28px;
     left: 25%;
 }
 
@@ -1213,23 +1213,23 @@ span.apl-background {
     letter-spacing: -0.045em;
 }
 
-.site-navigation.classic .menu.main-menu > li > a {
+.site-navigation.classic .menu.main-menu>li>a {
     display: block;
     padding-left: 20px;
     padding-right: 20px;
     color: rgba(25, 27, 29, .6);
 }
 
-.site-header.light .site-navigation.classic .menu.main-menu > li > a {
+.site-header.light .site-navigation.classic .menu.main-menu>li>a {
     color: hsla(0, 0%, 100%, .4)
 }
 
-.site-navigation.classic .menu.main-menu > li.menu-item-active > a {
+.site-navigation.classic .menu.main-menu>li.menu-item-active>a {
     color: #191b1d
 }
 
 
-.site-navigation.classic .menu.main-menu > li:first-child a {
+.site-navigation.classic .menu.main-menu>li:first-child a {
     padding-left: 0
 }
 
@@ -1255,7 +1255,7 @@ span.apl-background {
     background: #101010
 }
 
-.site-navigation.classic .menu.main-menu > li.menu-item.has-children:hover > .sub-menu {
+.site-navigation.classic .menu.main-menu>li.menu-item.has-children:hover>.sub-menu {
     visibility: visible;
     opacity: 1;
     -webkit-transform: translateY(20px);
@@ -1331,20 +1331,20 @@ span.apl-background {
     transform: translateX(87%) translateY(-40px)
 }
 
-.site-navigation.classic .menu.main-menu > li.menu-item.has-children:hover a::before {
+.site-navigation.classic .menu.main-menu>li.menu-item.has-children:hover a::before {
     -webkit-transform: translateY(10px);
     -ms-transform: translateY(10px);
     transform: translateY(10px);
     opacity: 0;
 }
 
-.site-navigation.classic .menu.main-menu > li.menu-item.has-children:hover > .sub-menu::after {
+.site-navigation.classic .menu.main-menu>li.menu-item.has-children:hover>.sub-menu::after {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0)
 }
 
-.site-navigation.classic .menu.main-menu > li.menu-item.has-children:hover > .sub-menu li.menu-item {
+.site-navigation.classic .menu.main-menu>li.menu-item.has-children:hover>.sub-menu li.menu-item {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -1379,7 +1379,7 @@ span.apl-background {
     display: none
 }
 
-.site-navigation.fullscreen .menu.main-menu > li.menu-item {
+.site-navigation.fullscreen .menu.main-menu>li.menu-item {
     font-size: 50px;
     line-height: 80px;
     font-weight: 700;
@@ -1389,7 +1389,7 @@ span.apl-background {
     padding-bottom: 0
 }
 
-.site-navigation.fullscreen .menu.main-menu > li.menu-item a {
+.site-navigation.fullscreen .menu.main-menu>li.menu-item a {
     position: relative;
     display: inline-block;
     -webkit-transform: translateY(100%);
@@ -1400,7 +1400,7 @@ span.apl-background {
 }
 
 
-.site-navigation.fullscreen .menu.main-menu > li.menu-item a::before {
+.site-navigation.fullscreen .menu.main-menu>li.menu-item a::before {
     content: attr(data-hover);
     position: absolute;
     left: 0;
@@ -1413,12 +1413,12 @@ span.apl-background {
     white-space: nowrap
 }
 
-.site-navigation.fullscreen .menu.main-menu.hovered > li.menu-item a::before {
+.site-navigation.fullscreen .menu.main-menu.hovered>li.menu-item a::before {
     width: 0%
 }
 
 
-.site-navigation.fullscreen .menu.main-menu.hovered > li.menu-item a.hovered::before {
+.site-navigation.fullscreen .menu.main-menu.hovered>li.menu-item a.hovered::before {
     width: 100%;
 }
 
@@ -1477,7 +1477,7 @@ span.apl-background {
     transform: translate(-50%, -50%) rotate(-90deg);
 }
 
-.menu-item.has-children > a:hover > .sub-toggle {
+.menu-item.has-children>a:hover>.sub-toggle {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
@@ -1585,12 +1585,12 @@ span.apl-background {
     transform: translateY(100%)
 }
 
-.site-navigation.fullscreen ul.hidden > li,
+.site-navigation.fullscreen ul.hidden>li,
 .site-navigation.fullscreen ul.hidden {
     visibility: hidden;
 }
 
-.site-navigation.fullscreen ul.opened > li,
+.site-navigation.fullscreen ul.opened>li,
 .site-navigation.fullscreen ul.opened {
     visibility: visible;
     opacity: 1
@@ -1702,11 +1702,11 @@ body.loading span.toggle-line {
     background: #191b1d
 }
 
-.site-header.menu_dark .site-navigation.fullscreen .menu.main-menu > li.menu-item a {
+.site-header.menu_dark .site-navigation.fullscreen .menu.main-menu>li.menu-item a {
     color: hsla(0, 0%, 100%, .2)
 }
 
-.site-header.menu_dark .site-navigation.fullscreen .menu.main-menu > li.menu-item a::before {
+.site-header.menu_dark .site-navigation.fullscreen .menu.main-menu>li.menu-item a::before {
     color: #fff
 }
 
@@ -1803,7 +1803,7 @@ body.loading span.toggle-line {
 /*------------------------------------------------------------------
 ## Search
 -------------------------------------------------------------------**/
-.widget input[type="search"i] {
+.widget input[type="search" i] {
     width: 100%;
     display: block;
     padding: 10px;
@@ -1885,12 +1885,14 @@ ul.product-tags li a {
     padding-left: 1.5rem;
     color: rgba(25, 27, 29, .6);
 }
+
 .copyright-text:before {
     position: absolute;
     font-size: 1.5rem;
     content: "\00a9";
     margin-left: -1.3rem;
 }
+
 #footer.dark .copyright-text {
     color: hsla(0, 0%, 100%, .2);
 }
@@ -1947,8 +1949,9 @@ ul.product-tags li a {
     padding-right: 30px;
     font-size: 14px;
 }
-.footer-wrapper-end{
-    margin-bottom:-50px;
+
+.footer-wrapper-end {
+    margin-bottom: -50px;
 }
 
 
@@ -2584,7 +2587,7 @@ body.dark .page-sub-title::after {
 
 }
 
-.linked-text a > div {
+.linked-text a>div {
     background-repeat: repeat;
     -webkit-background-clip: text;
     background-repeat: repeat;
@@ -3259,7 +3262,7 @@ body.dark .ct-title::before {
     width: 100%;
 }
 
-.ct-prices > div,
+.ct-prices>div,
 .ct-total {
     display: block;
     float: left;
@@ -3271,12 +3274,12 @@ body.dark .ct-title::before {
     margin: 15px 0;
 }
 
-body.dark .ct-prices > div,
+body.dark .ct-prices>div,
 body.dark .ct-total {
     color: hsla(0, 0%, 100%, .4)
 }
 
-.ct-prices > div span,
+.ct-prices>div span,
 .ct-total span {
     font-weight: 700;
     letter-spacing: -0.06em;
@@ -3285,7 +3288,7 @@ body.dark .ct-total {
     color: #191b1d;
 }
 
-body.dark .ct-prices > div span,
+body.dark .ct-prices>div span,
 body.dark .ct-total span {
     color: #fff;
 }
@@ -4497,17 +4500,17 @@ ul.rate-proudct li {
     font-size: 12px;
 }
 
-.product-review > span {
+.product-review>span {
     display: inline-block;
     margin-left: 10px;
     font-size: 12px;
 }
 
-.product-review > span::before {
+.product-review>span::before {
     content: "(";
 }
 
-.product-review > span::after {
+.product-review>span::after {
     content: ")";
 }
 
@@ -4946,7 +4949,7 @@ body.dark .project-cat,
 
 .project-page-header.style_2 .project-head {
     position: relative;
-        display: block;
+    display: block;
     width: 75%;
     margin: auto;
     overflow: hidden;
@@ -5079,8 +5082,8 @@ body.dark .project-page-header.style_3 .project-head,
     display: block;
 }
 
-.next-project-section{
-  overflow: hidden;
+.next-project-section {
+    overflow: hidden;
 }
 
 s .next-project-section {
@@ -5133,9 +5136,9 @@ body.dark .next-project-section::after {
     transition: color .1s ease .1s
 }
 
-.next-project-section:hover .next-project-wrap, 
-.next-project-section:hover .next-project-wrap h1{
- color: white;
+.next-project-section:hover .next-project-wrap,
+.next-project-section:hover .next-project-wrap h1 {
+    color: white;
 }
 
 body.dark .next-project-wrap,
@@ -5144,12 +5147,14 @@ body.dark .next-project-wrap h1 {
 }
 
 .next-project-section:hover .next-project-wrap h1::before {
-    background:black;
-      
+    background: black;
+
 }
-.next-project-wrap .next-project-wrap h1::after{
-    background:white;
+
+.next-project-wrap .next-project-wrap h1::after {
+    background: white;
 }
+
 .next-project-wrap span {
     display: block;
     margin-bottom: 20px;
@@ -5196,9 +5201,9 @@ body.dark .next-project-wrap h1 {
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-     filter: blur(5px) grayscale(100%);
-   -webkit-filter: blur(5px) grayscale(100%);
-   -moz-filter: blur(5px) grayscale(100%);
+    filter: blur(5px) grayscale(100%);
+    -webkit-filter: blur(5px) grayscale(100%);
+    -moz-filter: blur(5px) grayscale(100%);
 }
 
 /*------------------------------------------------------------------
@@ -5997,7 +6002,7 @@ body.dark .a-plus-button a,
     color: #fff
 }
 
-.a-plus-button a > span {
+.a-plus-button a>span {
     display: inline-block;
     position: absolute;
     top: 30%;
@@ -6008,7 +6013,7 @@ body.dark .a-plus-button a,
     overflow: hidden;
 }
 
-.a-plus-button a > span > span {
+.a-plus-button a>span>span {
     display: block;
     -webkit-transform: translateY(100%);
     -ms-transform: translateY(100%);
@@ -6020,7 +6025,7 @@ body.dark .a-plus-button a,
     transition: transform .3s ease .3s, -webkit-transform .3s ease .3s;
 }
 
-.a-plus-button:hover a > span > span {
+.a-plus-button:hover a>span>span {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0)
@@ -6769,10 +6774,10 @@ body.dark .fs-button a {
     margin-right: -3px
 }
 
-.fs-tit-char > span,
-.fs-button > span,
-.fs-meta > span,
-.fs-fraction > span {
+.fs-tit-char>span,
+.fs-button>span,
+.fs-meta>span,
+.fs-fraction>span {
     display: block
 }
 
@@ -7520,12 +7525,12 @@ body.dark .ss2-back-texts,
     color: rgba(25, 27, 29, .4);
 }
 
-.ss2-project-excerpt > div {
+.ss2-project-excerpt>div {
     display: block;
     overflow: hidden
 }
 
-.ss2-project-excerpt > div > span {
+.ss2-project-excerpt>div>span {
     display: block
 }
 
@@ -8602,6 +8607,9 @@ body.dark .alioth-services .service-wrap::before,
 
 .single-image img {
     width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: center;
 }
 
 .single-image.parallax_wrapper {
@@ -8610,6 +8618,16 @@ body.dark .alioth-services .service-wrap::before,
     background-position: 50% 0%;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.yt-video-box {
+    width: 100%;
+    aspect-ratio: 3/2;
+    pointer-events: none !important;
+}
+
+.yt-video-box .html5-video-container video{
+    width: 100% !important;
 }
 
 /*------------------------------------------------------------------
@@ -9161,7 +9179,7 @@ body.dark .ac-title {
         transform: none;
     }
 
-    .site-navigation.fullscreen .menu.main-menu > li.menu-item {
+    .site-navigation.fullscreen .menu.main-menu>li.menu-item {
         font-size: 35px;
         line-height: 60px;
 
@@ -9198,7 +9216,7 @@ body.dark .ac-title {
         top: 15%
     }
 
-    .site-navigation.fullscreen .menu.main-menu.hovered > li.menu-item a::before {
+    .site-navigation.fullscreen .menu.main-menu.hovered>li.menu-item a::before {
         width: 100%
     }
 
@@ -9439,8 +9457,9 @@ body.dark .ac-title {
     .next-project-section .wrapper-small {
         margin-bottom: 0
     }
-    .next-project-section section{
-    overflow: hidden;
+
+    .next-project-section section {
+        overflow: hidden;
     }
 
     /* ------- ## Showcase Layouts ------- **/
@@ -9681,7 +9700,7 @@ body.dark .ac-title {
         margin-bottom: 15px
     }
 
-    form > div.half-field {
+    form>div.half-field {
         width: 100%
     }
 
@@ -10329,4 +10348,3 @@ body.dark .ac-title {
     white-space: nowrap;
     display: inline-block;
 }
-

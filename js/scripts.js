@@ -4,8 +4,8 @@
     console.clear();
     gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger, CSSRulePlugin, ScrollToPlugin, MorphSVGPlugin, CustomEase, InertiaPlugin);
     gsap.config({ nullTargetWarn: false });
-    
-    
+
+
     var pageSet,
         pageCursor,
         siteLoader,
@@ -67,7 +67,7 @@
                 supportsPassive = true;
             }
         }));
-    } catch (e) {}
+    } catch (e) { }
 
     var wheelOpt = supportsPassive ? {
         passive: false
@@ -1002,9 +1002,9 @@
                     menuItemA = $this.children('a');
 
                 var classicSplit = new SplitText(menuItemA, {
-                        tyoe: 'chars',
-                        charsClass: 'menu-tit-char'
-                    }),
+                    tyoe: 'chars',
+                    charsClass: 'menu-tit-char'
+                }),
                     mobileQuery = window.matchMedia('(max-width: 900px)')
 
                 $(window).on('resize', function (e) {
@@ -5291,11 +5291,11 @@
 
 
         let csw = gsap.fromTo(wrapper, {
-                x: wrapFirstTrans
-            }, {
-                x: '-' + (wrapper.outerWidth() - $(window).outerWidth() + 350)
+            x: wrapFirstTrans
+        }, {
+            x: '-' + (wrapper.outerWidth() - $(window).outerWidth() + 350)
 
-            }),
+        }),
             windowWidth = $(window).outerWidth(),
             css = new ScrollTrigger({
                 trigger: '.carousel-showcase',
@@ -7400,15 +7400,15 @@
                 //Welcome Animation
 
                 let sCarouselWelcome = gsap.timeline({
-                        onStart: function () {
-                            disableScroll();
-                        },
-                        onComplete: function () {
+                    onStart: function () {
+                        disableScroll();
+                    },
+                    onComplete: function () {
 
-                            enableScroll();
-                        }
+                        enableScroll();
+                    }
 
-                    }),
+                }),
                     wrapper = $('.cas-project-wrapper'),
                     wrapFirstTrans = $(window).outerWidth() / 100 * 90,
                     wrapWidth = -wrapper.outerWidth();
@@ -7464,8 +7464,8 @@
 
 
                 let welcomeAnim = gsap.timeline({
-                        once: true
-                    }),
+                    once: true
+                }),
                     currentSlide = $('.swiper-slide-active'),
                     nextSlide = $('.swiper-slide-next'),
                     prevSlide = $('.swiper-slide-prev'),
@@ -7535,8 +7535,8 @@
                 //Welcome Animation
 
                 let fsWallWelcome = gsap.timeline({
-                        once: true
-                    }),
+                    once: true
+                }),
                     dashs = CSSRulePlugin.getRule('.fw-project::after');
 
 
@@ -8131,17 +8131,17 @@
 
 
                 }
-                    }, {
+            }, {
                 name: 'fs-image-trans',
                 from: {
                     namespace: [
-                                    'fs-slider'
-                                ]
+                        'fs-slider'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -8248,17 +8248,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'fs-image-trans-half',
                 from: {
                     namespace: [
-                                    'fs-slider'
-                                ]
+                        'fs-slider'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -8382,17 +8382,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'sc-image-trans',
                 from: {
                     namespace: [
-                                    'sc-carousel'
-                                ]
+                        'sc-carousel'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -8511,17 +8511,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'sc-image-trans-half',
                 from: {
                     namespace: [
-                                    'sc-carousel'
-                                ]
+                        'sc-carousel'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -8673,17 +8673,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'fss-image-trans',
                 from: {
                     namespace: [
-                                    'fs-slideshow'
-                                ]
+                        'fs-slideshow'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -8841,17 +8841,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'fss-image-trans-half',
                 from: {
                     namespace: [
-                                    'fs-slideshow'
-                                ]
+                        'fs-slideshow'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -9027,17 +9027,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'fswall-image-trans-half',
                 from: {
                     namespace: [
-                                    'fs-wall'
-                                ]
+                        'fs-wall'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -9191,17 +9191,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'fswall-image-trans',
                 from: {
                     namespace: [
-                                    'fs-wall'
-                                ]
+                        'fs-wall'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -9325,17 +9325,17 @@
                     })
                 }
 
-                    }, {
+            }, {
                 name: 'scwall-image-trans',
                 from: {
                     namespace: [
-                                    'sc-wall'
-                                ]
+                        'sc-wall'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -9472,17 +9472,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'scwall-image-trans-half',
                 from: {
                     namespace: [
-                                    'sc-wall'
-                                ]
+                        'sc-wall'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -9642,17 +9642,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'scslideshow-image-trans',
                 from: {
                     namespace: [
-                                    'sc-slideshow'
-                                ]
+                        'sc-slideshow'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -9776,17 +9776,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'scslideshow-image-trans-half',
                 from: {
                     namespace: [
-                                    'sc-slideshow'
-                                ]
+                        'sc-slideshow'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -9944,17 +9944,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'sclist-image-trans',
                 from: {
                     namespace: [
-                                    'sc-list'
-                                ]
+                        'sc-list'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph2'
-                                ]
+                        'pph2'
+                    ]
                 },
                 leave() {
 
@@ -10068,17 +10068,17 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'sclist-image-trans-half',
                 from: {
                     namespace: [
-                                    'sc-list'
-                                ]
+                        'sc-list'
+                    ]
                 },
                 to: {
                     namespace: [
-                                    'pph1'
-                                ]
+                        'pph1'
+                    ]
                 },
                 leave() {
 
@@ -10206,7 +10206,7 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'title-trans',
                 from: {
                     namespace: [
@@ -10382,7 +10382,7 @@
 
                 }
 
-                    }, {
+            }, {
                 name: 'title-next-trans',
                 from: {
                     namespace: [
@@ -10502,12 +10502,40 @@
 
                 }
 
-                    }]
+            }]
     });
 
 
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';
     };
+
+    // (function () {
+    //     $(".yt-video-box").YTPlayer();
+    // });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const ytVideos = document.querySelectorAll(".yt-video-box");
+
+        ytVideos.forEach((el) => {
+            const videoId = el.getAttribute("data-yt-id");
+
+            if (videoId) {
+                const iframe = document.createElement("iframe");
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&rel=0&modestbranding=1&showinfo=0`;
+                iframe.allow = "autoplay; fullscreen";
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = "0";
+
+                el.style.position = "relative";
+                el.style.overflow = "hidden";
+                el.style.width = "100%";
+
+                el.appendChild(iframe);
+            }
+        });
+    });
 
 }(jQuery));
