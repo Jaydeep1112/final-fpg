@@ -2434,6 +2434,7 @@
                 loop: {
                     active: true
                 }
+
             });
 
             //            showCaseplayer.restart();
@@ -10521,10 +10522,11 @@
         ytVideos.forEach((el) => {
             const videoId = el.getAttribute("data-yt-id");
 
-            if (videoId) {
+            if (videoId && !el.querySelector("iframe")) {
                 const iframe = document.createElement("iframe");
                 iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&rel=0&modestbranding=1&showinfo=0`;
                 iframe.allow = "autoplay; fullscreen";
+                iframe.loading = "lazy"; // performance!
                 iframe.style.width = "100%";
                 iframe.style.height = "100%";
                 iframe.style.border = "0";

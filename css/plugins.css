@@ -10313,6 +10313,7 @@ a.plyr__control::before {
 }
 
 .plyr--video {
+    aspect-ratio: 3/2;
     background: #000;
     background: var(--plyr-video-background, var(--plyr-video-background, #000));
     overflow: hidden
@@ -10334,8 +10335,7 @@ a.plyr__control::before {
 
 .plyr__video-embed,
 .plyr__video-wrapper--fixed-ratio {
-    height: 0;
-    padding-bottom: 56.25%
+    height: 100%;
 }
 
 .plyr__video-embed iframe,
@@ -10347,9 +10347,7 @@ a.plyr__control::before {
 }
 
 .plyr--full-ui .plyr__video-embed > .plyr__video-embed__container {
-    padding-bottom: 240%;
     position: relative;
-    transform: translateY(-38.28125%)
 }
 
 .plyr--video .plyr__controls {
