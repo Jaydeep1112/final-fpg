@@ -2434,6 +2434,7 @@
                 loop: {
                     active: true
                 }
+                
             });
 
             //            showCaseplayer.restart();
