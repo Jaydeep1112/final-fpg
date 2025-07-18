@@ -10348,3 +10348,13 @@ body.dark .ac-title {
     white-space: nowrap;
     display: inline-block;
 }
+
+.para{
+   
+   font-size: 24px;
+    line-height: 35px;
+    margin-left: -1px;
+    /* font-weight: 700; */
+    letter-spacing: -0.05em;
+  
+}
