@@ -10358,3 +10358,24 @@ body.dark .ac-title {
     letter-spacing: -0.05em;
   
 }
+
+iframe{
+    position:absolute;
+    top:0; 
+    left:0;
+    height: 405px;
+    width: 605px;
+    background-color: #000;
+}
+.single-image.video-sec{
+    height: 405px;
+}
+@media only screen and (max-width: 576px){
+    iframe{
+    height: 100%;
+    width: 100%;
+}
+.single-image.video-sec{
+    height: 100%;
+}
+}
