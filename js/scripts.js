@@ -10540,4 +10540,92 @@
         });
     });
 
+    $(document).ready(function () {
+    $(".phone-input").on("input", function () {
+        let value = $(this).val().replace(/[^0-9]/g, "");
+        $(this).val(value);
+
+        if (!/^[0-9]{10}$/.test(value)) {
+            $(this).addClass("is-invalid");
+            this.setCustomValidity("Invalid phone number.");
+        } else {
+            $(this).removeClass("is-invalid");
+            this.setCustomValidity("");
+        }
+    });
+
+    const handleFormSubmit = (formID, subject) => {
+        const form = document.getElementById(formID);
+        if (!form) return;
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            if (!form.checkValidity()) {
+                form.classList.add("was-validated");
+                return;
+            }
+
+            const formData = new FormData(form);
+            const fields = [];
+            for (let [key, value] of formData.entries()) {
+                fields.push({
+                    label: key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' '),
+                    value: value.trim(),
+                });
+            }
+
+            const submitBtn = form.querySelector("button[type='submit']");
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Submitting...";
+            submitBtn.disabled = true;
+
+            try {
+                const res = await fetch("mailer.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        subject: subject,
+                        fields: fields,
+                    }),
+                });
+
+                const result = await res.json();
+                console.log(result);
+
+                if (result.status === "success") {
+                    form.reset();
+                    form.classList.remove("was-validated");
+                    form.querySelectorAll(".is-valid, .is-invalid").forEach((el) => {
+                        el.classList.remove("is-valid", "is-invalid");
+                    });
+
+                    alert("Thank you! Your brochure will download shortly.");
+
+                    const modal = form.closest(".modal");
+                    if (modal) {
+                        const instance = bootstrap.Modal.getInstance(modal);
+                        if (instance) instance.hide();
+                    }
+                } else {
+                    throw new Error(result.message || "Submission failed.");
+                }
+            } catch (err) {
+                alert("Error: " + err.message);
+                console.error(err);
+            } finally {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    };
+
+    handleFormSubmit("contactForm", "New Enquiry from Website");
+});
+
+
 }(jQuery));
+
+

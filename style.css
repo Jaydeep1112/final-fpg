@@ -1046,6 +1046,7 @@ span.apl-background {
 -------------------------------------------------------------------**/
 
 .site-header {
+    background-color: rgba(255, 255, 255, 0.70);
     display: block;
     position: absolute;
     width: 100%;
@@ -1102,7 +1103,7 @@ span.apl-background {
 .header-wrapper {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     width: 83%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -4977,7 +4978,7 @@ body.dark .project-cat,
 }
 
 .project-page-header.style_2 .project-cat {
-    font-size: 24px;
+    font-size: 26px;
     margin-left: 6px;
     display: block;
     overflow: hidden;
@@ -5316,6 +5317,8 @@ body.dark .aw-project .aw-project-wrap::before {
     position: absolute;
     bottom: 40px;
     left: 40px;
+    background-color: #f1f1f1c2;
+    padding: 5px 10% 5px 5px;
 }
 
 
