@@ -10370,7 +10370,7 @@ iframe{
     position:absolute;
     top:0; 
     left:0;
-    height: 405px;
+    height: 100%;
     width: 605px;
     background-color: #000;
 }
@@ -10403,4 +10403,10 @@ iframe{
   .site-logo{
     width: 70px;
   }
+}
+i{
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 4px;
 }
