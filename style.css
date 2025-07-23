@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-Template:	Alioth - Creative Portfolio & Agency Template
+Template:	Alioth - Premier Integrated Graphic Design Studio
 Version:	1.2
 Last change:	05/04/2022
 -------------------------------------------------------------------*/
@@ -1046,7 +1046,7 @@ span.apl-background {
 -------------------------------------------------------------------**/
 
 .site-header {
-    background-color: rgba(255, 255, 255, 0.70);
+    background-color: rgba(241, 241, 241, 0.70);
     display: block;
     position: absolute;
     width: 100%;
@@ -10404,9 +10404,9 @@ iframe{
     width: 70px;
   }
 }
-i{
+/* i{
     border: 1px solid black;
     margin: 10px;
     border-radius: 5px;
     padding: 4px;
-}
+} */
